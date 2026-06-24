@@ -3,7 +3,7 @@ Inspired by Lord Shiva's Avatar, Kirata, a tribal hunstsmen to test Arjuna's war
 This project involves finding vulnerabilties in Career Connect and resolving them to safegaurd our website from cyber-attacks.
 
 ## OVERVIEW
-With the rapidly advancing world, number of cyberattacks have also increased. So, from my team I took the initiative of securing our job portal Career Connect. 
+With the rapidly advancing world, number of cyber-attacks have also increased. So, from my team I took the initiative of securing our job portal Career Connect. 
 This project addresses those growing threats by focusing on design and deployment of our secure job portal which is specifically tailored for entry level professionals, recruiters, mentors and domestic workers.
 The core development focused on implementing rigorous identity and access management, deploying an application-layer incident containment protocol, and researching defensive mechanisms against automated credential attacks.
 
