@@ -1,6 +1,6 @@
 # THE OG CAREER CONNECT: BUT NOW SECURED 🕵🏼‍♀️✨
 # Introducing Project Kirata 🛡⚔
-Inspired by Lord Shiva's Avatar, Kirata, a tribal hunstsmen to test Arjuna's warrior skills in the epic Mahabharata. This project involves finding vulnerabilties in Career Connect and resolving them to safegaurd our website from cyber-attackers.
+Inspired by Lord Shiva's Avatar, Kirata, a tribal hunstsmen to test Arjuna's warrior skills in the epic Mahabharata. This project involves finding vulnerabilties in Career Connect and resolving them to safegaurd our website from cyber-attacks.
 
 ## 1.Problem Statement
 The application tracking system lacked a defensive layer against automated API abuse and Denials of Service (DoS). A malicious actor or bot could flood the application endpoints (/apply, /status, /get) with unlimited rapid requests, potentially crashing the server or polluting the database with spam records.
