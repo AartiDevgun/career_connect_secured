@@ -1,26 +1,41 @@
 # PROJECT KIRATA 🏹🛡🌐✨
-Inspired by Lord Shiva's Avatar, Kirata, a tribal hunstsmen to test Arjuna's warrior skills in the epic Mahabharata. This project involves finding vulnerabilties in Career Connect and resolving them to safegaurd our website from cyber-attackers.
+Inspired by Lord Shiva's Avatar, Kirata, a tribal hunstsmen to test Arjuna's warrior skills in the epic Mahabharata. 
+This project involves finding vulnerabilties in Career Connect and resolving them to safegaurd our website from cyber-attacks.
 
 ## OVERVIEW
-With the rapidly advancing world, number of cyberattacks have also increased. So, from my team I took the initiative of securing our job portal Career Connect. This project addresses those growing threats by focusing on design and deployment of our secure job portal which is specifically tailored for entry level professionals, recruiters, mentors and domestic workers.
+With the rapidly advancing world, number of cyberattacks have also increased. So, from my team I took the initiative of securing our job portal Career Connect. 
+This project addresses those growing threats by focusing on design and deployment of our secure job portal which is specifically tailored for entry level professionals, recruiters, mentors and domestic workers.
 The core development focused on implementing rigorous identity and access management, deploying an application-layer incident containment protocol, and researching defensive mechanisms against automated credential attacks.
 
 ## IMPLEMENTED SECURITY CONTROLS AND THREAT MITIGATION
-To drastically minimize the application's attack surface, a strict authentication wall was established across the entire infrastructure. The platform enforces mandatory session verification, ensuring that unauthenticated bots, malicious scrapers, and unauthorized entities cannot access underlying user directories, applicant profiles, or sensitive database endpoints. This structural control directly mitigates automated web scraping and data harvesting, preventing malicious data-mining bots from collecting freshers' personal resumes and contact details. At the user interface level, mandatory credential masking was integrated into the signup and login sequences to neutralize the threat of local Shoulder Surfing Attacks in shared or public university environments.
+To drastically minimize the application's attack surface, a strict authentication wall was established across the entire infrastructure.
+The platform enforces mandatory session verification, ensuring that unauthenticated bots, malicious scrapers, and unauthorized entities cannot access underlying user directories, applicant profiles, or sensitive database endpoints. 
+This structural control directly mitigates automated web scraping and data harvesting, preventing malicious data-mining bots from collecting freshers' personal resumes and contact details. 
+At the user interface level, mandatory credential masking was integrated into the signup and login sequences to neutralize the threat of local Shoulder Surfing Attacks in shared or public university environments.
 
-Beyond standard access controls, the architecture features a decentralized, user-driven threat detection framework designed to counter fraudulent job postings used for phishing infrastructure. Attackers frequently leverage fake listings to host credential harvesting links or demand upfront fees from vulnerable job seekers. To disrupt this blast radius, users can flag anomalous listings, feeding real-time telemetry into the system's incident response logic. When an asset receives four to five unique reports, our platform executes a triage protocol, automatically moving the targeted database entry into an isolated administrative quarantine queue for deep inspection. If report volumes breach a higher critical threshold, an automated containment policy is triggered, dynamically revoking the public visibility of the asset to minimize real-time exposure.
+Beyond standard access controls, the architecture features a decentralized, user-driven threat detection framework designed to counter fraudulent job postings used for phishing infrastructure.
+Attackers frequently leverage fake listings to host credential harvesting links or demand upfront fees from vulnerable job seekers. 
+To disrupt this blast radius, users can flag anomalous listings, feeding real-time telemetry into the system's incident response logic. 
+When an asset receives four to five unique reports, our platform executes a triage protocol, automatically moving the targeted database entry into an isolated administrative quarantine queue for deep inspection. 
+If report volumes breach a higher critical threshold, an automated containment policy is triggered, dynamically revoking the public visibility of the asset to minimize real-time exposure.
 
 
 ## AUTHENTICATION RESEARCH, IMPLEMENTATION DEFICIENCIES AND CODE ANALYSIS
-A major phase of this project involved engineering resilience against automated brute-force and dictionary attacks, where threat actors use automated scripts to guess passwords at scale. The technical objective was to deploy two distinct defensive layers: a structural two-factor authentication protocol to halt session hijacking if credentials are leaked, and an account lockout mechanism that enforces a temporary system cooldown after five to six consecutive failed authentication attempts to cut off dictionary attack scripts.
+A major phase of this project involved engineering resilience against automated brute-force and dictionary attacks, where threat actors use automated scripts to guess passwords at scale.
+The technical objective was to deploy two distinct defensive layers: a structural two-factor authentication protocol to halt session hijacking if credentials are leaked, and an account lockout mechanism that enforces 
+a temporary system cooldown after five to six consecutive failed authentication attempts to cut off dictionary attack scripts.
 
-While the underlying backend logic and cryptographic structures for both features were successfully engineered and verified as syntactically correct, local environment compilation anomalies prevented full integration into the production runtime user-interface. Specifically, integrating the rate limiting state counter and the MFA tokens caused a structural routing conflict within the local rendering engine. The backend failed to correctly parse the session state logic alongside the UI templates, causing the local server to default to its most basic raw fallback view.
+While the underlying backend logic and cryptographic structures for both features were successfully engineered and verified as syntactically correct, local environment compilation anomalies prevented
+full integration into the production runtime user-interface. Specifically, integrating the rate limiting state counter and the MFA tokens caused a structural routing conflict within the local rendering engine. 
+The backend failed to correctly parse the session state logic alongside the UI templates, causing the local server to default to its most basic raw fallback view.
 
 
 ## ROOT CAUSE ANANLYSIS AND FUTURE ENGINEERING ROADMAP
-Rather than forcing an unstable or insecure patch into the application layer, these features were isolated as active research vectors. A post mortem like analysis of the integration was done and it was found that the failure indicates that while integrating those features directly within the primary application routing layer created an architectural bottleneck.
+Rather than forcing an unstable or insecure patch into the application layer, these features were isolated as active research vectors. A post mortem like analysis of the integration was done and it was 
+found that the failure indicates that while integrating those features directly within the primary application routing layer created an architectural bottleneck.
 
-The next phase of this security roadmap involves completely decoupling these defensive mechanisms from the primary application logic. Future remediation will focus on shifting rate limiting and two factor authentication to prevent attacks like cross site scripting.
+The next phase of this security roadmap involves completely decoupling these defensive mechanisms from the primary application logic. Future remediation will focus on shifting rate limiting and two factor 
+authentication to prevent attacks like cross site scripting.
 
 
 ## PROTOTYPES
