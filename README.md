@@ -1,5 +1,5 @@
 # THE OG CAREER CONNECT: BUT NOW SECURED 🕵🏼‍♀️✨
-# Inroducing Project Kirata 🛡⚔
+# Introducing Project Kirata 🛡⚔
 Inspired by Lord Shiva's Avatar, Kirata, a tribal hunstsmen to test Arjuna's warrior skills in the epic Mahabharata. This project involves finding vulnerabilties in Career Connect and resolving them to safegaurd our website from cyber-attackers.
 
 ## 1.Problem Statement
