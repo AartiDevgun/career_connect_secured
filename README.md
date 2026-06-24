@@ -1,14 +1,16 @@
 # THE OG CAREER CONNECT: BUT NOW SECURED 🕵🏼‍♀️✨
 # Inroducing Project Kirata 🛡⚔
+Inspired by Lord Shiva's Avatar, Kirata, a tribal hunstsmen to test Arjuna's warrior skills in the epic Mahabharata. This project involves finding vulnerabilties in Career Connect and resolving them to safegaurd our website from cyber-attackers.
 
 ## 1.Problem Statement
 The application tracking system lacked a defensive layer against automated API abuse and Denials of Service (DoS). A malicious actor or bot could flood the application endpoints (/apply, /status, /get) with unlimited rapid requests, potentially crashing the server or polluting the database with spam records.
 
 ## Tools Used
 Node.js & Express.js (Backend Framework)
-
+MongoDB (Backendend Framework)
+JavaScript (Backend Framework)
 express-rate-limit (Security Middleware Package)
-
+SonarQube (Vulnerability Finder)
 VS Code (Code Editor)
 
 ## Solution
@@ -109,8 +111,66 @@ Scanners Miss Logic Flaws: Automated security scanners look for syntax errors, b
 
 
 
+## 3. Problem Statement
+
+The platform lacked an automated mechanism to detect, isolate, and contain malicious data or fraudulent listings targeting vulnerable users. Without a system to track user-driven threat indicators in real-time, the portal was vulnerable to hosting phishing infrastructure, deceptive credential-harvesting schemes, and advance-fee recruitment scams. Administrative intervention was completely manual, meaning a malicious listing could remain active indefinitely, continuously scaling its blast radius before a human operator could review and remove it.
+
+## Tools Used
+
+ **Node.js & Express Router:** For engineering stateful arrays and logic sequences to track and increment reporting metrics tied to unique database entries.
+* **VS Code:** Used to draft, isolate, and test the conditional conditional threshold statements.
+
+## Lessons learnt
+
+Shifting from manual oversight to an automated, crowdsourced detection pipeline allows the application to function as an agile, application-layer intrusion detection system (IDS) that traps threats early. Designing a two-tiered threshold protocol (Triage/Quarantine at 4-5 reports, and Visibility Revocation at a higher threshold) proves that system automation can neutralize threats instantly without permanently destroying raw database integrity before a formal review.
+Injecting complex database object manipulation and asset hiding states directly through basic local routing templates can cause rendering engine conflicts, highlighting the need to offload heavy state-tracking to an isolated caching layer in the future.
 
 
+## 4. Problem Statement
+
+The application's authentication interface left plain-text passwords fully visible on screen during the registration and login flows. This lack of user interface masking introduced a critical vulnerability to local physical observation, commonly known as a shoulder-surfing attack. In public, semi-public, or shared university environments like computer labs, any nearby actor or local surveillance mechanism could visually harvest a user's raw credentials, leading to subsequent unauthorized account takeovers.
+
+## Tools Used
+
+ **HTML5 :** For modifying frontend form controls and specifying secure input attributes.
+ **React.js :** Used to target authentication components and manage secure field states.
+ **VS Code:** Used for isolating structural interface code and validating input field configuration parameters.
+
+ ## Code Snippet 
+javascript
+const hashedPassword = await bcrypt.hash(password, 10);
+
+await User.create({
+    fullname,
+    email,
+    phoneNumber,
+    password: hashedPassword,
+    role,
+    profile:{
+        profilePhoto:cloudResponse.secure_url,
+    }
+});
+
+## Lessons Learnt
+
+Defensive engineering must extend beyond backend database encryption; protecting data while it is in transit or actively rendered on a user's screen is just as vital to maintaining overall system integrity.
+Utilizing proper HTML input types (such as changing raw text parameters to hidden password fields) provides a lightweight, native browser defense that mitigates local surveillance risks without requiring heavy processing overhead.
+Securing the portal requires a multi-layered approach where front-end visual shielding (credential masking) acts as the outermost perimeter defense, perfectly complementing downstream backend authentication mechanisms.
+
+
+## 5. Problem Statement
+
+The platform's authentication gateway relied entirely on single-factor passwords, leaving user profiles highly vulnerable to automated credential-guessing, credential-stuffing, and dictionary attacks. Without request-throttling or secondary verification checkpoints, an attacker who compromised or guessed a user's primary password via automated script iterations could instantly execute an unauthorized account takeover, completely bypassing the perimeter.
+
+## Tools Used
+**Node.js & Express.js:** Used to design custom verification routing and structural session validation logic.
+**VS Code:** For script isolation, code auditing, and programming cryptographic token handling.
+**bcrypt** Employed to test and maintain the security of underlying identity tokens.
+
+## Lessons learnt
+Integrating complex state counters and multi-factor validation routines directly into the primary UI rendering loop creates an architectural bottleneck that risks template parsing conflicts on localhost.
+Access controls, password visual shields, and multi-factor validation checkpoints must be structurally mapped out during initial system design rather than added as unstable post-production overrides.
+Maintaining non-compiled features as isolated, verified Proof-of-Concept (PoC) code blocks allows engineering teams to preserve flawless backend logic syntax while troubleshooting environment-specific runtime constraints. The following backend verification pattern establishes the cryptographic structural logic required to authenticate tokens and secure active login sessions before issuing authorization flags:
 
 
 
