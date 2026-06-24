@@ -122,8 +122,8 @@ The platform lacked an automated mechanism to detect, isolate, and contain malic
 
 ## Lessons learnt
 
-Shifting from manual oversight to an automated, crowdsourced detection pipeline allows the application to function as an agile, application-layer intrusion detection system (IDS) that traps threats early. Designing a two-tiered threshold protocol (Triage/Quarantine at 4-5 reports, and Visibility Revocation at a higher threshold) proves that system automation can neutralize threats instantly without permanently destroying raw database integrity before a formal review.
-Injecting complex database object manipulation and asset hiding states directly through basic local routing templates can cause rendering engine conflicts, highlighting the need to offload heavy state-tracking to an isolated caching layer in the future.
+* Shifting from manual oversight to an automated, crowdsourced detection pipeline allows the application to function as an agile, application-layer intrusion detection system (IDS) that traps threats early. * Designing a two-tiered threshold protocol (Triage/Quarantine at 4-5 reports, and Visibility Revocation at a higher threshold) proves that system automation can neutralize threats instantly without permanently destroying raw database integrity before a formal review.
+* Injecting complex database object manipulation and asset hiding states directly through basic local routing templates can cause rendering engine conflicts, highlighting the need to offload heavy state-tracking to an isolated caching layer in the future.
 
 
 ## 4. Problem Statement
@@ -153,9 +153,9 @@ await User.create({
 
 ## Lessons Learnt
 
-Defensive engineering must extend beyond backend database encryption; protecting data while it is in transit or actively rendered on a user's screen is just as vital to maintaining overall system integrity.
-Utilizing proper HTML input types (such as changing raw text parameters to hidden password fields) provides a lightweight, native browser defense that mitigates local surveillance risks without requiring heavy processing overhead.
-Securing the portal requires a multi-layered approach where front-end visual shielding (credential masking) acts as the outermost perimeter defense, perfectly complementing downstream backend authentication mechanisms.
+* Defensive engineering must extend beyond backend database encryption; protecting data while it is in transit or actively rendered on a user's screen is just as vital to maintaining overall system integrity.
+* Utilizing proper HTML input types (such as changing raw text parameters to hidden password fields) provides a lightweight, native browser defense that mitigates local surveillance risks without requiring heavy processing overhead.
+* Securing the portal requires a multi-layered approach where front-end visual shielding (credential masking) acts as the outermost perimeter defense, perfectly complementing downstream backend authentication mechanisms.
 
 
 ## 5. Problem Statement
@@ -168,9 +168,9 @@ The platform's authentication gateway relied entirely on single-factor passwords
 **bcrypt** Employed to test and maintain the security of underlying identity tokens.
 
 ## Lessons learnt
-Integrating complex state counters and multi-factor validation routines directly into the primary UI rendering loop creates an architectural bottleneck that risks template parsing conflicts on localhost.
-Access controls, password visual shields, and multi-factor validation checkpoints must be structurally mapped out during initial system design rather than added as unstable post-production overrides.
-Maintaining non-compiled features as isolated, verified Proof-of-Concept (PoC) code blocks allows engineering teams to preserve flawless backend logic syntax while troubleshooting environment-specific runtime constraints. The following backend verification pattern establishes the cryptographic structural logic required to authenticate tokens and secure active login sessions before issuing authorization flags:
+* Integrating complex state counters and multi-factor validation routines directly into the primary UI rendering loop creates an architectural bottleneck that risks template parsing conflicts on localhost.
+* Access controls, password visual shields, and multi-factor validation checkpoints must be structurally mapped out during initial system design rather than added as unstable post-production overrides.
+* Maintaining non-compiled features as isolated, verified Proof-of-Concept (PoC) code blocks allows engineering teams to preserve flawless backend logic syntax while troubleshooting environment-specific runtime constraints. The following backend verification pattern establishes the cryptographic structural logic required to authenticate tokens and secure active login sessions before issuing authorization flags:
 
 
 
