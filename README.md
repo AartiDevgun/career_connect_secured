@@ -1,5 +1,5 @@
 # THE OG CAREER CONNECT: BUT NOW SECURED 🕵🏼‍♀️✨
-
+# Inroducing Project Kirata 🛡⚔
 
 ## 1.Problem Statement
 The application tracking system lacked a defensive layer against automated API abuse and Denials of Service (DoS). A malicious actor or bot could flood the application endpoints (/apply, /status, /get) with unlimited rapid requests, potentially crashing the server or polluting the database with spam records.
